@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html ng-app="TianYa">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -33,17 +33,32 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="./ionic/css/ionic.min.css" rel="stylesheet">
+        <script src="ionic/js/ionic.bundle.min.js"></script>
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+      </ion-nav-bar>
+
+        <div classlass="bar bar-header bar-positive"></div>
+
+        <ion-nav-view></ion-nav-view>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+
+        <script src="app.js"></script>
+
+        <script src="modules/tabs/tabs.js"></script>
+        <script src="modules/tabs/tabsCtrl.js"></script>
+
+        <script src="modules/Favorite/favorite.js"></script>
+        <script src="modules/Favorite/favoriteCtrl.js"></script>
     </body>
 </html>
+
+
+<!--台湾模块，获取最新回复：http://wireless.tianya.cn/v/forumStand/getHotArticleInWeek?itemId=333&pageSize=20&pageNo=1-->
